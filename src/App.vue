@@ -50,3 +50,4 @@ const currentView = computed(() => {
   margin-right: 10px;
 }
 </style>
+
