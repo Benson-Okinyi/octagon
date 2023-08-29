@@ -24,7 +24,12 @@
   </template>
   
   <script>
-  import { ref } from 'vue';
+
+  
+
+
+ import { getAPI } from  '../routes/axios-api'
+ import { ref } from 'vue';
   import { useRouter } from 'vue-router';
   
   export default {
@@ -46,6 +51,15 @@
         login,
       };
     },
+
+    created (){
+      getAPI.get('/api/login/',)
+        .then(response => {
+          console.log('You logged in successfully')
+          this.APIData = response.data 
+        })
+
+    }
   };
   </script>
   

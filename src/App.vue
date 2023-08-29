@@ -46,7 +46,7 @@ const currentView = computed(() => {
 
 .nav-link {
   text-decoration: none;
-  color: #fff;
+  color: black;
   margin-right: 10px;
 }
 </style>
